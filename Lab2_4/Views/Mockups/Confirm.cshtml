@@ -1,0 +1,11 @@
+﻿@model User
+@{ViewData["Title"] = "Reset Your Password";}
+
+
+<h1>Reset Your Password</h1>
+
+<form method="post">
+    <b>Code</b><br>
+    @Html.TextBox("Value", "", new { style = "width:300px" }) @ViewBag.Check<br>
+    <input type="submit" name="verify" value="Verify" class="btn btn-light" style="border-color:lightgrey;">
+</form>

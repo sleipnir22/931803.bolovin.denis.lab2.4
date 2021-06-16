@@ -1,0 +1,12 @@
+﻿@{ViewData["Title"] = "ListBox";}
+
+<h1>List Box</h1>
+
+<form method="post">
+    <p><b>Month</b><br>
+        @Html.ListBox("State", new SelectList(new string[] { "January", "February", 
+            "March", "April", "May", "June", "July", "August", "Septemer", "October", 
+            "November", "December"}), new { style = "width:300px" })<br>
+    </p>
+    <input type="submit" value="Submit" class="btn btn-light" style="border-color:lightgrey;">
+</form>

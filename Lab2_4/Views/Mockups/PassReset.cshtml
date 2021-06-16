@@ -1,0 +1,15 @@
+﻿@model User
+@{ViewData["Title"] = "Reset Your Password";}
+
+<h1>Reset Your Password</h1>
+
+<div>
+    <form method="post">
+        <b>Email</b><br>
+        @Html.TextBox("Email", "") @Html.ValidationMessageFor(p => p.Email)<br>
+        <input type="submit" value="Send me a code" name="action" class="btn btn-primary mt-3 pr-3 pl-3">
+        <input type="submit" value="I have a code" name="action" class="btn btn-light mt-3 pr-3 pl-3" style="border-color:lightgrey">
+
+        <h3>@ViewBag.Code</h3>
+    </form>
+</div>

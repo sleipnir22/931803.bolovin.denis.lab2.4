@@ -1,0 +1,10 @@
+﻿@{ViewData["Title"] = "TextArea";}
+
+<h1>Text Area</h1>
+
+<form method="post">
+    <p><b>Text</b><br>
+        @Html.TextArea("State", "", 5, 50, null)
+    </p>
+    <input type="submit" value="Submit" class="btn btn-light" style="border-color:lightgrey;">
+</form>
